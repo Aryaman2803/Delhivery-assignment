@@ -1,0 +1,35 @@
+database:
+  mongodb:
+    uri: ${MONGODB_URI}
+    options:
+      useNewUrlParser: true
+      useUnifiedTopology: true
+      retryWrites: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiresIn: ${JWT_EXPIRES_IN}
+
+server:
+  port: ${PORT}
+  nodeEnv: ${NODE_ENV}
+  corsOrigin: ${CLIENT_URL}
+
+app:
+  name: "Robotics Telemetry Dashboard"
+  version: "1.0.0"
+  description: "Real-time robotics fleet monitoring system"
+
+telemetry:
+  broadcastInterval: 500
+  maxTrailPoints: 50
+  batteryDrainRates:
+    patrol: 0.15
+    delivery: 0.2
+    maintenance: 0.05
+    idle: 0.03
+
+logging:
+  level: ${LOG_LEVEL}
+  enableConsole: true
+  enableFile: false

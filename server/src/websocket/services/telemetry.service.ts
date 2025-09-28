@@ -3,10 +3,7 @@ import { Interval } from '@nestjs/schedule';
 import { RobotsService } from '../../robots/robots.service';
 import { WebSocketGateway } from '../websocket.gateway';
 import { ConfigService } from '@nestjs/config';
-import {
-  TelemetryDataDto,
-  RobotStatus,
-} from '../dto/telemetry.dto';
+import { TelemetryDataDto, RobotStatus } from '../dto/telemetry.dto';
 import { RobotDocument } from '../../robots/schemas/robot.schema';
 
 @Injectable()
@@ -30,14 +27,8 @@ export class TelemetryService {
     const robotId = String(robot._id);
 
     // Set robot status to active when simulation is running (unless in maintenance)
-    if (
-      robot.status !== 'maintenance' &&
-      robot.status !== 'offline'
-    ) {
-      robot.status =
-        robot.config.operatingMode === 'idle'
-          ? 'idle'
-          : 'active';
+    if (robot.status !== 'maintenance' && robot.status !== 'offline') {
+      robot.status = robot.config.operatingMode === 'idle' ? 'idle' : 'active';
     }
 
     switch (robot.config.operatingMode) {
