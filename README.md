@@ -302,5 +302,16 @@ cd client && npm test
 - Multiple dashboard users
 - Real-time WebSocket communications
 
+## 📸 Application Screenshots
+
+### Fleet Dashboard
+![Fleet Dashboard](screenshots/fleet-dashboard.png)
+*Real-time robot fleet monitoring with status indicators, filtering, and global simulation controls*
+
+### Robot Detail View
+![Robot Detail](screenshots/robot-detail.png)
+*Individual robot telemetry with 2D position visualization, live data stream, and configuration management*
+
 ---
+
 
