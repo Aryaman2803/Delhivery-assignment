@@ -305,11 +305,13 @@ cd client && npm test
 ## 📸 Application Screenshots
 
 ### Fleet Dashboard
-![Fleet Dashboard](screenshots/fleet-dashboard.png)
+<img width="720" height="480" alt="Screenshot 2025-09-29 at 1 01 09 AM" src="https://github.com/user-attachments/assets/c0fe2556-bacb-43c3-922c-644a5995559c" />
+
 *Real-time robot fleet monitoring with status indicators, filtering, and global simulation controls*
 
 ### Robot Detail View
-![Robot Detail](screenshots/robot-detail.png)
+<img width="720" height="480" alt="Screenshot 2025-09-29 at 1 00 09 AM" src="https://github.com/user-attachments/assets/157adcd6-5285-4660-b0ca-99ba8b80b0d5" />
+
 *Individual robot telemetry with 2D position visualization, live data stream, and configuration management*
 
 ---
